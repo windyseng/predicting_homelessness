@@ -40,15 +40,15 @@ To converge with CoC homeless counts, the data was grouped into CoC areas using 
 
 ## EDA
 
-A line graph the homeless count by CoC showed two large spikes in the graph which represent NYC and LA. 
+A line graph the homeless count by CoC showed two large outliers. 
 
 ![count](https://user-images.githubusercontent.com/54602329/64926615-98014b80-d7cd-11e9-90f3-39ffe3ae3f46.png)
 
-A scatterplot graph of population size by homeless count showed outliers with homeless counts above 30,000 & population sizes above 10,000,000. 
+A scatterplot graph of population size by homeless count showed additional outliers with homeless counts above 30,000 & population sizes above 10,000,000. Dropping CoCs: NYC, LA, Santa Barbara, Texas(balance), Houston.
 
+![pop](https://user-images.githubusercontent.com/54602329/64926721-cfbcc300-d7ce-11e9-97c4-22c85755bf37.png)
 
-
-
+Eviction rate and eviction filing rate are missing data. NaN's are replaced with the mean for each feature. 
 
 
 
