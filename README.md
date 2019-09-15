@@ -22,29 +22,27 @@ In this project, I will show that through machine learning and using publicly av
 [HUD Exchange: Continuum of Care Coverage](https://www.hudexchange.info/resource/4981/fy-2016-continuums-of-care-names-and-numbers/)
 *(compiled the county list manually)*
 
-## Compiling Data
+## Compiling Data 
 
-- Annual HUD CoC files were converted into a single dataframe containing CoC number, year, count. 
+- Annual HUD CoC files were converted into a single dataframe containing CoC number, year, homeless count. 
 
-- Excel workbooks of annual Social Security data contained sheets for each state with data itemized by county on each sheet. The data from 50 pages of each workbook were combined into dataframes, reformatted, and the year was added. The annual data was concatenated into one dataframe. 
+- Excel workbooks of annual Social Security data contained sheets for each state with spend itemized by county and demographic on each sheet. The data from 50 pages of each workbook were combined into dataframes, reformatted, and the year was added. The annual data was concatenated into one dataframe. 
 
 - Unemployment data was already compiled via Kaggle, state and county data was reformatted and the monthly items were grouped into annual averages. 
 
-- Location data was compiled to create a dataframe with CoC number, FIPS code, latitude, longitude, county, state, and state abbreviation.
+- Location data was compiled into a dataframe with CoC number, FIPS code, latitude, longitude, county, state, and state abbreviation.
 
 - Eviction state/county data was merged with location data using FIPS/GEOID codes. Social security and unemployment data was merged with the eviction data.  
 
-      hl_df.columns
-      
-      Index(['GEOID', 'year', 'population', 'poverty-rate',
-             'renter-occupied-households', 'pct-renter-occupied',
-             'median-gross-rent', 'median-household-income', 'median-property-value',
-             'rent-burden', 'pct-white', 'pct-af-am', 'pct-hispanic', 'pct-am-ind',
-             'pct-asian', 'pct-nh-pi', 'pct-multiple', 'pct-other',
-             'eviction-filings', 'evictions', 'eviction-rate',
-             'eviction-filing-rate', 'st', 'FIPS', 'LON', 'LAT', 'number', 'state',
-             'county', 'total_ssi', 'aged_ssi', 'disbl_ssi', '18_und_ssi',
-             '18_64_ssi', '65_ovr_ssi', 'unemploy_rate'],
-            dtype='object')
+ADD MAPS HERE
  
- 
+To converge with CoC homeless counts, the data was grouped into CoC areas using the CoC number. Features containing totals were summed together. Features containing percentages, averages, or medians were averaged. Data was merged to create the initial dataset with 3157 observations and 34 columns. 
+
+## EDA
+
+A line graph the homeless count by CoC showed two large spikes in the graph which represent NYC and LA. 
+
+
+
+
+
