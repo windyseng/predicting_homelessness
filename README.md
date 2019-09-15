@@ -48,7 +48,13 @@ A scatterplot graph of population size by homeless count showed additional outli
 
 ![pop](https://user-images.githubusercontent.com/54602329/64926721-cfbcc300-d7ce-11e9-97c4-22c85755bf37.png)
 
-Eviction rate and eviction filing rate are missing data. NaN's are replaced with the mean for each feature. 
+Eviction rate is missing 498 observations and eviction filing rate is missing 441 observations. NaN's are replaced with the mean for each feature. 
 
 
+Initial look at distributions across key features. 
 
+![dist](https://user-images.githubusercontent.com/54602329/64927036-7b681200-d7d3-11e9-9382-bf98c21cbb0e.png)
+
+## Feature Engineering
+
+Added state mental healthcare spend to the dataset. 
