@@ -1,12 +1,12 @@
-# Predicting Homeless Population Size 
+# Predicting Homeless Population Sizes 
 
 The United States Department of Housing and Urban Development(HUD)award grants to Continuum of Care applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates housing and services funding for homeless families and individuals. CoC's distribute the funding to nonprofits and local government programs across the regional areas they represent. The population size and geographic areas covered by CoCs are dramatically different across state lines. 
 
 Two critical activities entrusted to CoCs is the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds that are being used. These counts provide an overview of the state of homelessness in a CoC area and help determine funding allocation. 
 
-In this project, I will show that through machine learning and using publicly available data; we can predict homeless population sizes, thereby eliminating the problematic physical counting and grant competitions, allowing for systematic distribution of baseline funding. 
+In this project, I will show that through machine learning and using publicly available data; we can predict homeless population sizes, thereby eliminating the problematic manual counting and/or grant competitions, allowing for systematic distribution of baseline funding. 
 
-## Data Sources
+## Primary Data Sources | Years 2007:2016
 
 [US Department of Housing and Urban Development: CoC Homeless Counts](https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/)
 
@@ -20,5 +20,31 @@ In this project, I will show that through machine learning and using publicly av
 
 
 [HUD Exchange: Continuum of Care Coverage](https://www.hudexchange.info/resource/4981/fy-2016-continuums-of-care-names-and-numbers/)
-*(compiled county list manually)*
+*(compiled the county list manually)*
 
+## Compiling Data
+
+- Annual HUD CoC files were converted into a single dataframe containing CoC number, year, count. 
+
+- Excel workbooks of annual Social Security data contained sheets for each state with data itemized by county on each sheet. The data from 50 pages of each workbook were combined into dataframes, reformatted, and the year was added. The annual data was concatenated into one dataframe. 
+
+- Unemployment data was already compiled via Kaggle, state and county data was reformatted and the monthly items were grouped into annual averages. 
+
+- Location data was compiled to create a dataframe with CoC number, FIPS code, latitude, longitude, county, state, and state abbreviation.
+
+- Eviction state/county data was merged with location data using FIPS/GEOID codes. Social security and unemployment data was merged with the eviction data.  
+
+      hl_df.columns
+      
+      Index(['GEOID', 'year', 'population', 'poverty-rate',
+             'renter-occupied-households', 'pct-renter-occupied',
+             'median-gross-rent', 'median-household-income', 'median-property-value',
+             'rent-burden', 'pct-white', 'pct-af-am', 'pct-hispanic', 'pct-am-ind',
+             'pct-asian', 'pct-nh-pi', 'pct-multiple', 'pct-other',
+             'eviction-filings', 'evictions', 'eviction-rate',
+             'eviction-filing-rate', 'st', 'FIPS', 'LON', 'LAT', 'number', 'state',
+             'county', 'total_ssi', 'aged_ssi', 'disbl_ssi', '18_und_ssi',
+             '18_64_ssi', '65_ovr_ssi', 'unemploy_rate'],
+            dtype='object')
+ 
+ 
