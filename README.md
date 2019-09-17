@@ -66,5 +66,6 @@ New feature: mental healthcare spend. Taking per capita spend per state and mult
 
 After checking variable distrubtions, I applied a logarithmic function and observed the impact on each distribution.
 
+![log](https://user-images.githubusercontent.com/54602329/65061897-da9b6300-d948-11e9-9282-a8549e939f2e.png)
 
-
+Using both log transformed variables and , interaction features were developed using 
