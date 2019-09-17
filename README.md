@@ -1,6 +1,6 @@
 # Predicting Homeless Population Sizes 
 
-Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the root of a host of social problems, from mental health care and low wages to educational and racial disparities. 
+Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the root of a host of social problems, from mental health care and low wages to educational and racial disparities.    
 
 <p align="center"> <a href="http://www.youtube.com/watch?feature=player_embedded&v=7f9dqQBYjcA" target="_blank"><img src="http://img.youtube.com/vi/7f9dqQBYjcA/0.jpg" 
 alt="myimage" width="500" height="380" border="10" /></a> </p>
@@ -76,16 +76,48 @@ Features > .90 correlation were dropped, reducing the dataset from 434 features 
 
 Lasso regularization reduced the features to 87. 
 
-## Models
+## Models 
 
 Linear Regression, R2: 0.63 
 
-Decision Tree Regression, R2: 0.83
+Decision Tree Regression with Grid Search CV, R2: 0.83
+ 
+ - Best parameters: max_depth= 18, min_samples_leaf= 5
 
-Random Forest Regression, R2: 0.93
+Random Forest Regression with Grid Search CV, R2: 0.93
 
-XGBoost Regressor, R2: 0.75
+ - Best parameters: max_depth= 18, n_estimators= 1000
 
-## Random Forest Regression
+XGBoost Regressor with Grid Search CV, R2: 0.75
 
-<img width="576" alt="Screen Shot 2019-09-17 at 2 44 00 PM" src="https://user-images.githubusercontent.com/54602329/65069925-b1cf9980-d959-11e9-8733-c6cb277fbf5d.png">
+ - Best parameters: gamma= 1.0, learning_rate= 0.1, max_depth= 6, min_child_weight= 1, n_jobs= 4, subsample= 0.05
+
+## Best Model: Random Forest Regression
+
+_Top 10 Features:_
+
+ - Total people 65 and older recieving Supplemental Security Income in the CoC
+ 
+ - Population size
+ 
+ - Population * Median Property Value
+ 
+ - Percentage of Native Hawaiian and Pacific Islanders
+ 
+ - Percentage of Renter Occupied Households * Percentage of White people
+ 
+ - Eviction Rate *  Precentage of Hispanic people
+ 
+ - Mental Health Budget
+ 
+ - Precentage of Renter Occupied Households
+ 
+ - Median Property Value
+ 
+ - Poverty Rate * Eviction Filings
+
+## Conclusion
+
+Mental health funding, race, poverty, wages, affordable housing, and employment opportunities all contribute to predicting the risk and potential for homelessness. These calculations could be used to better direct resources and invest in prevention by county, rather than Continuum of Care.
+
+There are additional contibuting factors to homelessness such as domestic violence, natural disasters, immigration policy, addiction, and divorce. Including some or all measurements of these factors could improve the model. 
