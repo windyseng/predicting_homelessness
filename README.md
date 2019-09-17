@@ -49,13 +49,16 @@ A scatterplot graph of population size by homeless count showed additional outli
 
 ![pop](https://user-images.githubusercontent.com/54602329/64926721-cfbcc300-d7ce-11e9-97c4-22c85755bf37.png)
 
-Eviction rate is missing 498 observations and eviction filing rate is missing 441 observations. NaN's are replaced with the mean for each feature. 
+Eviction rate was missing 498 observations and eviction filing rate was missing 441 observations. NaN's were replaced with the mean for each feature. 
 
 
 Initial look at distributions across key features. 
 
-![dist](https://user-images.githubusercontent.com/54602329/64927036-7b681200-d7d3-11e9-9382-bf98c21cbb0e.png)
+![dist](https://user-images.githubusercontent.com/54602329/65059832-ae7de300-d944-11e9-986a-8e705251eccb.png)
 
 ## Feature Engineering
 
-Added state mental healthcare spend to the dataset. 
+New feature: mental healthcare spend. Taking per capita spend per state and multiplying by population per CoC area for years 2007-2013. I did not find data on per capita spend for years 2014-2016, this data was created by taking the average population size and per capita spend per observation. 
+
+
+
