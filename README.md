@@ -44,18 +44,13 @@ In this project, I gathered publicly available data to build a predictive model 
  
 To converge with CoC homeless counts, the data was grouped into CoC areas using the CoC number. Features containing totals were summed together. Features containing percentages, averages, or medians were averaged. Data was merged to create the initial dataset with 3157 observations and 34 columns. 
 
-## EDA
-
-A line graph the homeless count by CoC showed two large outliers. 
-
-![count](https://user-images.githubusercontent.com/54602329/64926615-98014b80-d7cd-11e9-90f3-39ffe3ae3f46.png)
+## Exploratory Data Analysis
 
 A scatterplot graph of population size by homeless count showed additional outliers with homeless counts above 30,000 & population sizes above 10,000,000. Dropping CoCs: NYC, LA, Santa Barbara, Texas(balance), Houston.
 
 ![pop](https://user-images.githubusercontent.com/54602329/64926721-cfbcc300-d7ce-11e9-97c4-22c85755bf37.png)
 
 Eviction rate was missing 498 observations and eviction filing rate was missing 441 observations. NaN's were replaced with the mean for each feature. 
-
 
 Initial look at distributions across key features. 
 
@@ -67,7 +62,7 @@ New feature: mental healthcare spend. Taking per capita spend per state and mult
 
 ![mental](https://user-images.githubusercontent.com/54602329/65061125-44b30880-d947-11e9-9251-b95a9c650932.png)
 
-## Feature Transformation
+## Transformations
 
 After checking variable distrubtions, I applied a logarithmic function and observed the impact on each distribution.
 
@@ -76,3 +71,18 @@ After checking variable distrubtions, I applied a logarithmic function and obser
 Using Polynomial regression, variables were transformed twice into new interaction and polynomial features.
 
 ## Feature Selection
+
+Features > .90 correlation were dropped, reducing the dataset from 434 features to 90 features. 
+
+Lasso regularization reduced the features to 87. 
+
+## Models
+
+Linear Regression, R2: 0.63 
+Decision Tree Regression, R2: 0.83
+Random Forest Regression, R2: 0.93
+XGBoost Regressor, R2: 0.75
+
+## Random Forest Regression
+
+
