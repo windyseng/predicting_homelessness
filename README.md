@@ -2,8 +2,8 @@
 
 Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the root of a host of social problems, from mental health care and low wages to educational and racial disparities. 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=7f9dqQBYjcA" target="_blank"><img src="http://img.youtube.com/vi/7f9dqQBYjcA/0.jpg" 
-alt="myimage" align= "middle" width="240" height="180" border="10" /></a>
+<p align="center"> <a href="http://www.youtube.com/watch?feature=player_embedded&v=7f9dqQBYjcA" target="_blank"><img src="http://img.youtube.com/vi/7f9dqQBYjcA/0.jpg" 
+alt="myimage" width="500" height="380" border="10" /></a> </p>
 
 The United States Department of Housing and Urban Development(HUD)award grants to Continuum of Care applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates housing and services funding for homeless families and individuals. CoC's distribute the funding to nonprofits and local government programs across the regional areas they represent. The population size and geographic areas covered by CoCs are dramatically different across state lines. 
 
