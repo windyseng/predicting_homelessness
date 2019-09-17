@@ -60,5 +60,11 @@ Initial look at distributions across key features.
 
 New feature: mental healthcare spend. Taking per capita spend per state and multiplying by population per CoC area for years 2007-2013. I did not find data on per capita spend for years 2014-2016, this data was created by taking the average population size and per capita spend per observation. 
 
+![mental](https://user-images.githubusercontent.com/54602329/65061125-44b30880-d947-11e9-9251-b95a9c650932.png)
+
+## Feature Transformation
+
+After checking variable distrubtions, I applied a logarithmic function and observed the impact on each distribution.
+
 
 
