@@ -7,7 +7,7 @@ alt="myimage" width="500" height="380" border="10" /></a> </p>
 
 The United States Department of Housing and Urban Development(HUD)award grants to Continuum of Care applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates housing and services funding for homeless families and individuals. CoC's distribute the funding to nonprofits and local government programs across the regional areas they represent. The population size and geographic areas covered by CoCs are dramatically different across state lines. 
 
-Two critical activities entrusted to CoCs is the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds that are being used. These counts provide an overview of the state of homelessness in a CoC area and help determine funding allocation. 
+Two critical activities entrusted to CoCs are the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds that are being used. These counts provide an overview of the state of homelessness in a CoC area and help determine funding allocation. The counts do not reflect the people who do not wish to be seen or those who may have found shelter on that particular day. 
 
 In this project, I gathered publicly available data to build a predictive model that provides insight into the homelessness population growth, potentially eliminating the problematic manual count and/or grant competitions, allowing for systematic distribution of resources. 
 
@@ -73,4 +73,6 @@ After checking variable distrubtions, I applied a logarithmic function and obser
 
 ![log](https://user-images.githubusercontent.com/54602329/65061897-da9b6300-d948-11e9-9282-a8549e939f2e.png)
 
-Using both log transformed variables and , interaction features were developed using 
+Using Polynomial regression, variables were transformed twice into new interaction and polynomial features.
+
+## Feature Selection
