@@ -1,10 +1,15 @@
 # Predicting Homeless Population Sizes 
 
+Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the root of a host of social problems, from mental health care and low wages to educational and racial disparities. 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=7f9dqQBYjcA" target="_blank"><img src="http://img.youtube.com/vi/7f9dqQBYjcA/0.jpg" 
+alt="myimage" align= "middle" width="240" height="180" border="10" /></a>
+
 The United States Department of Housing and Urban Development(HUD)award grants to Continuum of Care applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates housing and services funding for homeless families and individuals. CoC's distribute the funding to nonprofits and local government programs across the regional areas they represent. The population size and geographic areas covered by CoCs are dramatically different across state lines. 
 
 Two critical activities entrusted to CoCs is the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds that are being used. These counts provide an overview of the state of homelessness in a CoC area and help determine funding allocation. 
 
-In this project, I will show that through machine learning and using publicly available data; we can predict homeless population sizes, thereby eliminating the problematic manual counting and/or grant competitions, allowing for systematic distribution of baseline funding. 
+In this project, I gathered publicly available data to build a predictive model that provides insight into the homelessness population growth, potentially eliminating the problematic manual count and/or grant competitions, allowing for systematic distribution of resources. 
 
 ## Primary Data Sources | Years 2007:2016
 
