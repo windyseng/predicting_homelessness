@@ -79,10 +79,13 @@ Lasso regularization reduced the features to 87.
 ## Models
 
 Linear Regression, R2: 0.63 
+
 Decision Tree Regression, R2: 0.83
+
 Random Forest Regression, R2: 0.93
+
 XGBoost Regressor, R2: 0.75
 
 ## Random Forest Regression
 
-
+<img width="576" alt="Screen Shot 2019-09-17 at 2 44 00 PM" src="https://user-images.githubusercontent.com/54602329/65069925-b1cf9980-d959-11e9-8733-c6cb277fbf5d.png">
