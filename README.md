@@ -1,6 +1,6 @@
 # Predicting Homeless Population Sizes 
 
-Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the top of a host of social issues, like mental health care, low wages, educational and racial disparities.    
+Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the top of a host of social issues, such as mental health care, low wages, and racial disparities.    
 
 <p align="center"> <a href="http://www.youtube.com/watch?feature=player_embedded&v=7f9dqQBYjcA" target="_blank"><img src="http://img.youtube.com/vi/7f9dqQBYjcA/0.jpg" 
 alt="myimage" width="500" height="380" border="10" /></a> </p>
@@ -29,36 +29,38 @@ In this project, I gathered publicly available data to build a predictive model 
 
 ## Compiling Data 
 
-- Annual HUD CoC files were converted into a single dataframe containing CoC number, year, homeless count. 
+- Using python/pandas, annual HUD CoC files were converted into a single dataframe containing CoC number, year, homeless count. 
 
 - Excel workbooks of annual Social Security data contained sheets for each state with spend itemized by county and demographic on each sheet. The data from 50 pages of each workbook were combined into dataframes, reformatted, and the year was added. The annual data was concatenated into one dataframe. 
 
-- Unemployment data was already compiled via Kaggle, state and county data was reformatted and the monthly items were grouped into annual averages. 
+- Unemployment data was already compiled via Kaggle. I grouped monthly observations into annual averages and reformatted the data.  
 
-- Location data was compiled into a dataframe with CoC number, FIPS code, latitude, longitude, county, state, and state abbreviation.
+- Location data was compiled from three sources and merged into a dataframe with CoC number, FIPS code, latitude, longitude, county, state, and state abbreviation.
 
-- Eviction state/county data was merged with location data using FIPS/GEOID codes. Social security and unemployment data was merged with the eviction data.  
+- Eviction state/county data was merged with location data using FIPS/GEOID codes. Social security and unemployment data were merged with the eviction data.  
 
 ![newplot](https://user-images.githubusercontent.com/54602329/65059429-ffd9a280-d943-11e9-8e93-231a6809c334.png)
 
  
-To converge with CoC homeless counts, the data was grouped into CoC areas using the CoC number. Features containing totals were summed together. Features containing percentages, averages, or medians were averaged. Data was merged to create the initial dataset with 3157 observations and 34 columns. 
+To converge the compiled data with CoC homeless counts,I grouped the observations into CoC areas using the CoC number. Features containing totals were summed together. Features containing percentages, averages, or medians were averaged. Data was merged to create the initial dataset with 3157 observations and 34 columns. 
 
 ## Exploratory Data Analysis
 
-A scatterplot graph of population size by homeless count showed additional outliers with homeless counts above 30,000 & population sizes above 10,000,000. Dropping CoCs: NYC, LA, Santa Barbara, Texas(balance), Houston.
+A scatterplot graph of population size by homeless count showed outliers with homeless counts above 30,000 & population sizes above 10,000,000. Dropping CoCs: NYC, LA, Santa Barbara, Texas(balance), Houston.
 
 ![pop](https://user-images.githubusercontent.com/54602329/64926721-cfbcc300-d7ce-11e9-97c4-22c85755bf37.png)
 
-Eviction rate was missing 498 observations and eviction filing rate was missing 441 observations. NaN's were replaced with the mean for each feature. 
+I checked for missing data and found that 498 observations were missing from the eviction rate feature and missing 441 observations were missing from the eviction filing rate feature. NaN's were replaced with the mean for each feature. 
 
-Initial look at distributions across key features. 
+I visualized the distribution of the data and many were not, normal violating one assumption of linear regression. 
 
-![dist](https://user-images.githubusercontent.com/54602329/65059832-ae7de300-d944-11e9-986a-8e705251eccb.png)
+
+
+
 
 ## Feature Engineering
 
-New feature: mental healthcare spend. Taking per capita spend per state and multiplying by population per CoC area for years 2007-2013. I did not find data on per capita spend for years 2014-2016, this data was created by taking the average population size and per capita spend per observation. 
+I created a new feature, mental health care spend, by taking per capita SMHA spend per state and multiplying by population per CoC area for years 2007-2013. I did not find data on per capita spend for years 2014-2016, this data was created by taking the average population size and per capita spend per observation. 
 
 ![mental](https://user-images.githubusercontent.com/54602329/65061125-44b30880-d947-11e9-9251-b95a9c650932.png)
 
