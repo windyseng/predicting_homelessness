@@ -1,15 +1,15 @@
 # Predicting Homeless Population Sizes 
 
-Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the root of a host of social problems, from mental health care and low wages to educational and racial disparities.    
+Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The lack of affordable housing sits at the top of a host of social issues, like mental health care, low wages, educational and racial disparities.    
 
 <p align="center"> <a href="http://www.youtube.com/watch?feature=player_embedded&v=7f9dqQBYjcA" target="_blank"><img src="http://img.youtube.com/vi/7f9dqQBYjcA/0.jpg" 
 alt="myimage" width="500" height="380" border="10" /></a> </p>
 
-The United States Department of Housing and Urban Development(HUD)award grants to Continuum of Care applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates housing and services funding for homeless families and individuals. CoC's distribute the funding to nonprofits and local government programs across the regional areas they represent. The population size and geographic areas covered by CoCs are dramatically different across state lines. 
+The United States Department of Housing and Urban Development(HUD) gives grants to "Continuum of Care" applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates the funding for housing and homeless prevention services. CoC's distribute resources to nonprofits and local government programs across the regions they represent. The population size and geographic areas covered by each CoC is dramatically different across state lines. 
 
-Two critical activities entrusted to CoCs are the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds that are being used. These counts provide an overview of the state of homelessness in a CoC area and help determine funding allocation. The counts do not reflect the people who do not wish to be seen or those who may have found shelter on that particular day. 
+Two critical activities entrusted to CoCs are the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds. These counts provide an overview of the state of homelessness in a CoC area and help HUD allocate resources. The counts do not reflect the people who do not wish to be seen or those who may have found shelter on that particular day. 
 
-In this project, I gathered publicly available data to build a predictive model that provides insight into the homelessness population growth, potentially eliminating the problematic manual count and/or grant competitions, allowing for systematic distribution of resources. 
+In this project, I gathered publicly available data to build a predictive model that provides insight into the homelessness population growth. 
 
 ## Primary Data Sources | Years 2007:2016
 
@@ -118,6 +118,6 @@ _Top 10 Features:_
 
 ## Conclusion
 
-Mental health funding, race, poverty, wages, affordable housing, and employment opportunities all contribute to predicting the risk and potential for homelessness. These calculations could be used to better direct resources and invest in prevention by county, rather than Continuum of Care.
+Mental health funding, race, poverty, wages, affordable housing, and employment opportunities all contribute to predicting the risk and potential for homelessness. This predictive model can potentially eliminate the problematic manual count and/or grant competitions, allowing for systematic distribution of resources.
 
 There are additional contibuting factors to homelessness such as domestic violence, natural disasters, immigration policy, addiction, and divorce. Including some or all measurements of these factors could improve the model. 
