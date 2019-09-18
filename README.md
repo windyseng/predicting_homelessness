@@ -3,7 +3,9 @@
 Homelessness in America is a deepening crisis that is inextricably linked to poverty and systemic injustice. The current system to prevent and to house homeless individuals is inaqeuate and ill-equipped. In this project, I gathered publicly available data to build a predictive model that provides insight into homelessness population growth.
 
 <p align="center"> <a href="http://www.youtube.com/watch?feature=player_embedded&v=7f9dqQBYjcA" target="_blank"><img src="http://img.youtube.com/vi/7f9dqQBYjcA/0.jpg" 
-alt="myimage" width="500" height="380" border="10" /></a> </p>
+alt="myimage" width="500" height="380" border="10" /></a> </p> 
+
+[*video from Princeton Eviction Lab](https://evictionlab.org/why-eviction-matters/#video)
 
 The United States Department of Housing and Urban Development(HUD) gives grants to "Continuum of Care" applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates the funding for housing and homeless prevention services. CoCs distribute resources to nonprofits and local government programs across the regions they represent. The population size and geographic areas covered by each CoC is dramatically different across state lines. 
 
