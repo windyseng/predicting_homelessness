@@ -52,8 +52,9 @@ A scatterplot graph of population size by homeless count showed outliers with ho
 
 I checked for missing data and found that 498 observations were missing from the eviction rate feature and missing 441 observations were missing from the eviction filing rate feature. NaN's were replaced with the mean for each feature. 
 
-I visualized the distribution of the data and many were not, normal violating one assumption of linear regression. 
+I visualized the distribution of the data finding that many features were not normal, violating one assumption of linear regression. 
 
+![download](https://user-images.githubusercontent.com/54602329/65158868-2dd0ec80-da01-11e9-8d10-6d6f39c4361b.png)
 
 
 
