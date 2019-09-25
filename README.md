@@ -11,6 +11,8 @@ The United States Department of Housing and Urban Development(HUD) gives grants 
 
 Two critical activities entrusted to CoCs are the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds. These counts provide an overview of the state of homelessness in a CoC area and help HUD allocate resources. The counts do not reflect the people who do not wish to be seen or those who may have found shelter on that particular day. 
 
+## Scope of Project: 
+For this final project at the Flatiron School, I had 10 days to determine a topic/hypothesis, assemble the dataset, and develop an appropriate model. This was a self-directed project with weekly student check-ins. 
 
 ## Primary Data Sources | Years 2007:2016
 
