@@ -7,7 +7,7 @@ alt="myimage" width="500" height="380" border="10" /></a> </p>
 
 [*video from Princeton Eviction Lab](https://evictionlab.org/why-eviction-matters/#video)
 
-The United States Department of Housing and Urban Development(HUD) gives grants to "Continuum of Care" applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates the funding for housing and homeless prevention services. CoCs distribute resources to nonprofits and local government programs across the regions they represent. The population size and geographic areas covered by each CoC is dramatically different across state lines. 
+The United States Department of Housing and Urban Development(HUD) gives grants to "Continuum of Care" applicants through an annual competition. A Continuum of Care (CoC) is a regional or local planning body that coordinates the funding for housing and homeless prevention services. CoCs distribute resources to nonprofits and local government programs across the regions they represent. The population size and geographic areas covered by each CoC are dramatically different across state lines. 
 
 Two critical activities entrusted to CoCs are the biannual physical count of homeless people and an annual enumeration of transitional housing units and homeless shelter beds. These counts provide an overview of the state of homelessness in a CoC area and help HUD allocate resources. The counts do not reflect the people who do not wish to be seen or those who may have found shelter on that particular day. 
 
