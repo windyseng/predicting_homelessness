@@ -112,11 +112,11 @@ _Top 10 Features:_
  
  - Percentage of Renter Occupied Households * Percentage of White people
  
- - Eviction Rate *  Precentage of Hispanic people
+ - Eviction Rate *  Percentage of Hispanic people
  
  - Mental Health Budget
  
- - Precentage of Renter Occupied Households
+ - Percentage of Renter Occupied Households
  
  - Median Property Value
  
