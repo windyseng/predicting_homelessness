@@ -124,6 +124,6 @@ _Top 10 Features:_
 
 ## Conclusion
 
-A predictive model can potentially eliminate the problematic manual count and/or grant competitions, allowing for systematic distribution of resources. Funding for homelessness services should be determined by need, irrespective of the current political climate and free from institutional bias. Homelessness can be determined at the county level, which could lead to a community based approach and stronger data collection. 
+A predictive model can potentially eliminate the problematic manual count and/or grant competitions, allowing for systematic distribution of resources. Funding for homelessness services should be determined by need, irrespective of the current political climate and free from institutional bias. Homelessness can be determined at the county level, which could lead to a community-based approach and stronger data collection. 
 
-There are additional contibuting factors to homelessness such as domestic violence, natural disasters, immigration policy, addiction, and divorce. Including some or all measurements of these factors could improve the model. 
+There are additional contributing factors to homelessness such as domestic violence, natural disasters, immigration policy, addiction, and divorce. Including some or all measurements of these factors could improve the model. 
