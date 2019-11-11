@@ -84,17 +84,17 @@ Lasso regularization reduced the features to 87.
 
 ## Models 
 
-Linear Regression, R2: 0.63 
+Linear Regression, R2: 0.63, MAE: 0.49
 
-Decision Tree Regression with Grid Search CV, R2: 0.83
+Decision Tree Regression with Grid Search CV, R2: 0.83, MAE:0.26
  
  - Best parameters: max_depth= 18, min_samples_leaf= 5
 
-Random Forest Regression with Grid Search CV, R2: 0.93
+Random Forest Regression with Grid Search CV, R2: 0.93, MAE: 0.19
 
  - Best parameters: max_depth= 18, n_estimators= 1000
 
-XGBoost Regressor with Grid Search CV, R2: 0.75
+XGBoost Regressor with Grid Search CV, R2: 0.75, MAE: 0.41
 
  - Best parameters: gamma= 1.0, learning_rate= 0.1, max_depth= 6, min_child_weight= 1, n_jobs= 4, subsample= 0.05
 
